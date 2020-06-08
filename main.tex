@@ -21,19 +21,41 @@
 
 \hyphenation{Ge-nome Ge-nomes hyper-mut-ation through-put}
 
-\title{Template}
-\author{You}
+\title{Phage ImmunoPrecipitation Sequencing (PhIP-Seq) Pipeline to chartierize antibody targets in SARS-CoV-2 patients}
+\author{Jared G. Galloway}
+
+% QUESTION: Where should we squeeze in phage-dms explanation? discussion?
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Abstract here.
+Phage Immunoprecipitation Sequencing (PhIP-Seq) is a powerful protocol for investigating potential antibody targets (epitopes). 
+PhIP-Seq looks for protein-protein interactions between the human body's own antibodies with artificial pathogens (phage vectors) i.e. the epitope displayed by a pathogen of interest. 
+The key assumption being that recovered patients who have undergone a full adaptive response to a disease we care about will have high enough volumes of antibodies (IgG content) to accurately observe an interaction with the pathogen causing the disease. 
+Here, we provide tools to store the resulting data, as well as compile a set of tools which take this as input and produce results.
 \end{abstract}
 
-
 \section*{Introduction}
-\cite{Felsenstein1981-zs}
+
+$\approx 2 pages$
+
+1. A brief summary of the adaptive immune system and how we interact with pathogens.
+%\cite{Felsenstein1981-zs}
+
+2. An in-depth summary of the protocol and how it is useful. 
+
+3. An introduction the the bioinformatics involved with the data
+
+4. A brief expanation about how nextflow + proper data storage is used to organize this data.
+
+\section*{Methods}
+
+1. a more in-depth explanation of the pipeline. possibly outlining the advantages and portability of nextflow.
+
+2. a figure showing the pipeline DAG.
+
+3. a brief explanation of tools used at each step of the pipeline
 
 % \begin{figure}[h]
 % \centering
@@ -44,10 +66,67 @@ Abstract here.
 % \label{fig:subsplit}
 % \end{figure}
 
+\subsection*{Pipeline Input - Data}
+
+$\approx 2 - 3 pages$
+
+\paragraph{Sample metadata}
+\paragraph{Peptide metadata}
+\paragraph{config file}
+
+\subsection*{Pipeline Output}
+
+1. descibe the counts generated
+
+2. A figure showing the heatmap of counts.
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.35\textwidth]{figures/subsplit.pdf}
+% \caption{\
+% A subsplit structure.
+% }
+% \label{fig:subsplit}
+% \end{figure}
+
+\section*{Results}
+
+$\approx 1 page$
+
+1. Introduce phippery and 
+
+2. general approach to query data of this type.
+
+3. Some fold enrichment plots?
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.35\textwidth]{figures/subsplit.pdf}
+% \caption{\
+% A subsplit structure.
+% }
+% \label{fig:subsplit}
+% \end{figure}
+
+\paragraph{Fold enrichment}
+
+4. descibe fold enrichment and what our results tell us so far.
+
+\section*{Discussion \& literature review}
+
+$\approx 1-2 pages$
+
+Good place to review some recently used methods moving forward, and concerns we have?
+
+\paragraph{z-score}
+
+\paragraph{motif analysis}
+
+...
+
 
 \bibliographystyle{plain}
 \bibliography{main}
-
 
 % \clearpage
 % \section*{Supplementary Materials}
@@ -56,3 +135,7 @@ Abstract here.
 
 
 \end{document}
+
+
+
+
